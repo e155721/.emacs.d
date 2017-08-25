@@ -22,3 +22,4 @@
 ;; zsh-mode
 ;;
 (add-to-list 'auto-mode-alist '("\\.zsh_*" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.zpf_*" . sh-mode))
