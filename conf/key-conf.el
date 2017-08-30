@@ -66,6 +66,12 @@
 
 ;;;; tex-mode key config
 ;;
+;; stex
+;;
 (add-hook 'tex-mode-hook
           '(lambda()
-             (define-key tex-mode-map "\C-t" 'ctex)))
+             (define-key tex-mode-map "\C-ts" 'stex)))
+
+(add-hook 'tex-mode-hook
+          '(lambda()
+             (define-key tex-mode-map "\C-t\C-t" 'ctex)))

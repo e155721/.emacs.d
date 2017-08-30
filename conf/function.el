@@ -1,0 +1,11 @@
+(defun stex ()
+  (interactive)
+  (split-window-right)
+  (setq fname "/usr/local/usr_txt/TeX/sample.tex")
+  (find-file-read-only fname))
+
+(defun ctex ()
+  (interactive)
+  (setq fname (file-name-nondirectory (buffer-file-name)))
+  (setq com (message "ctex %s" fname))
+  (shell-command com))

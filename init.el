@@ -5,13 +5,13 @@
 (add-to-list 'load-path "~/.emacs.d/conf")
 (load "key-conf")
 (load "env-conf")
+(load "function")
 
 ;; elisp
 ;;
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (load "factorial")
 (load "groovy-mode")
-(load "ctex")
 
 ;;;; mode configuration
 ;;
