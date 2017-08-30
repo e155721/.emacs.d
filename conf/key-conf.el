@@ -64,6 +64,12 @@
           '(lambda()
              (define-key eshell-mode-map "\C-n" 'eshell-next-matching-input-from-input)))
 
+;;;; tex-mode key config
+;;
+(add-hook 'tex-mode-hook
+          '(lambda()
+             (define-key tex-mode-map "\C-t" 'ctex)))
+
 ;;;; Lisp-interaction-mode Key Config
 ;;
 ;; eval-last-sexp

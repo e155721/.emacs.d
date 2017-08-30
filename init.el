@@ -11,6 +11,7 @@
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (load "factorial")
 (load "groovy-mode")
+(load "ctex")
 
 ;;;; mode configuration
 ;;
