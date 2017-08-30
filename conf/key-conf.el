@@ -69,11 +69,3 @@
 (add-hook 'tex-mode-hook
           '(lambda()
              (define-key tex-mode-map "\C-t" 'ctex)))
-
-;;;; Lisp-interaction-mode Key Config
-;;
-;; eval-last-sexp
-;;(add-hook 'lisp-interaction-mode-hook
-;;          '(lambda()
-;;             (define-key lisp-interaction-mode-map "\C-t" 'nil)
-;;             (define-key lisp-interaction-mode-map "\C-t" 'eval-last-sexp)))
