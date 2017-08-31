@@ -3,8 +3,8 @@
 ;; conf
 ;;
 (add-to-list 'load-path "~/.emacs.d/conf")
-(load "key-conf")
-(load "env-conf")
+(load "key")
+(load "env")
 (load "function")
 
 ;; elisp
