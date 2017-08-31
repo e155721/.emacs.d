@@ -7,6 +7,10 @@
 
 (defun ctex ()
   (interactive)
-  (setq fname (file-name-nondirectory (buffer-file-name)))
-  (setq com (message "ctex %s" fname))
-  (shell-command com))
+  (shell-command "ctex"))
+
+;;(defun ctex ()
+;;  (interactive)
+;;  (setq fname (file-name-nondirectory (buffer-file-name)))
+;;  (setq com (message "ctex %s" fname))
+;;  (shell-command com))
