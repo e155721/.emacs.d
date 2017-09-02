@@ -24,3 +24,7 @@
 ;;
 (add-to-list 'auto-mode-alist '("\\.zsh_*" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\.zpf_*" . sh-mode))
+
+;; css-mode
+;;
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
