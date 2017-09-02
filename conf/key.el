@@ -82,4 +82,5 @@
 ;;
 (add-hook 'html-mode-hook
           '(lambda()
-             (define-key html-mode-map "\C-c]" 'nil)))
+             (define-key html-mode-map "\C-c]" 'nil)
+             (define-key html-mode-map "\C-t" 'sgml-close-tag)))
