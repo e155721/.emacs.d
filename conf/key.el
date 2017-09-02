@@ -52,7 +52,7 @@
 ;; nil eshell-list-history
 (add-hook 'eshell-mode-hook
           '(lambda()
-             (define-key eshell-mode-map "\C-c\C-l" 'nill)))
+             (define-key eshell-mode-map "\C-c\C-l" 'nil)))
 
 ;; previous history
 (add-hook 'eshell-mode-hook
@@ -75,3 +75,11 @@
 (add-hook 'tex-mode-hook
           '(lambda()
              (define-key tex-mode-map "\C-t\C-t" 'ctex)))
+
+;;;; html-mode key config
+;;
+;; sgml-close-tag
+;;
+(add-hook 'html-mode-hook
+          '(lambda()
+             (define-key html-mode-map "\C-c]" 'nil)))
