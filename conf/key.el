@@ -40,6 +40,10 @@
 (global-set-key (kbd "C-c p") 'windmove-up)
 (global-set-key (kbd "C-c l") 'windmove-right)
 
+;; grep-find
+;;
+(define-key global-map "\C-cf" 'grep-find)
+
 ;;;; C mode key binde
 ;;
 ;; uncomment-region
