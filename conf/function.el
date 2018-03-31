@@ -7,6 +7,7 @@
 
 (defun ctex ()
   (interactive)
+  (save-buffer)
   (shell-command "ctex"))
 
 ;;(defun ctex ()
