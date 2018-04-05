@@ -76,9 +76,15 @@
           '(lambda()
              (define-key tex-mode-map "\C-ts" 'stex)))
 
+;; ctex
 (add-hook 'tex-mode-hook
           '(lambda()
              (define-key tex-mode-map "\C-t\C-t" 'ctex)))
+
+;; Define nil to key of latex-close-block.
+(add-hook 'tex-mode-hook
+          '(lambda()
+             (define-key tex-mode-map "\C-c]" 'nil)))
 
 ;;;; html-mode key config
 ;;
