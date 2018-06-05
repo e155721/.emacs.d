@@ -29,6 +29,10 @@
 ;;
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
 
+;; latex-mode
+;;
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-mode))
+
 ;; melpa
 ;;
 (require 'package)
