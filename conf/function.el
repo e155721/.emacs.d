@@ -2,7 +2,7 @@
   (interactive)
   (split-window-right)
   (windmove-right)
-  (setq fname "/usr/local/usr_txt/TeX/sample.tex")
+  (setq fname "~/.tex/sample.tex")
   (find-file-read-only fname))
 
 (defun ctex ()
