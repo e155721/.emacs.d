@@ -32,17 +32,3 @@
 ;; latex-mode
 ;;
 (add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-mode))
-
-;; melpa
-;;
-(require 'package)
-(let* ((no-ssl (and (not (gnutls-available-p))))
-       (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
-  (add-to-list 'package-archives (cons "melpa" url) t))
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
-(package-initialize)
-
-;; projectile-rails
-;;
-(projectile-rails-global-mode)
